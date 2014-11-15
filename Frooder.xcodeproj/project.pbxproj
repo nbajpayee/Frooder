@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E94E6F81A17D1BB00DC3629 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E94E6F61A17D1BB00DC3629 /* Bolts.framework */; };
+		2E94E6F91A17D1BB00DC3629 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E94E6F71A17D1BB00DC3629 /* Parse.framework */; };
+		2E94E6FC1A17D1C200DC3629 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E94E6FA1A17D1C200DC3629 /* ParseFacebookUtils.framework */; };
+		2E94E6FD1A17D1C200DC3629 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E94E6FB1A17D1C200DC3629 /* ParseUI.framework */; };
 		D99EF1841A173AF900B19067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EF1831A173AF900B19067 /* AppDelegate.swift */; };
 		D99EF1861A173AF900B19067 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EF1851A173AF900B19067 /* ViewController.swift */; };
 		D99EF1891A173AF900B19067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99EF1871A173AF900B19067 /* Main.storyboard */; };
@@ -23,8 +27,6 @@
 		D99EF1B21A173B4B00B19067 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1B11A173B4B00B19067 /* Security.framework */; };
 		D99EF1B41A173B5200B19067 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1B31A173B5200B19067 /* StoreKit.framework */; };
 		D99EF1B61A173B5900B19067 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1B51A173B5900B19067 /* SystemConfiguration.framework */; };
-		D99EF1B81A173B6200B19067 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1B71A173B6200B19067 /* Parse.framework */; };
-		D99EF1BD1A173EF400B19067 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1BC1A173EF400B19067 /* Bolts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E94E6F61A17D1BB00DC3629 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../../Downloads/parse-library-1.5.0 (1)/Bolts.framework"; sourceTree = "<group>"; };
+		2E94E6F71A17D1BB00DC3629 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../../Downloads/parse-library-1.5.0 (1)/Parse.framework"; sourceTree = "<group>"; };
+		2E94E6FA1A17D1C200DC3629 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../../../Downloads/parse-library-1.5.0 (1)/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		2E94E6FB1A17D1C200DC3629 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../../../Downloads/parse-library-1.5.0 (1)/ParseUI.framework"; sourceTree = "<group>"; };
 		D99EF17E1A173AF900B19067 /* Frooder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frooder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99EF1821A173AF900B19067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D99EF1831A173AF900B19067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,9 +64,7 @@
 		D99EF1B11A173B4B00B19067 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D99EF1B31A173B5200B19067 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D99EF1B51A173B5900B19067 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		D99EF1B71A173B6200B19067 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../Downloads/parse-library-1.5.0/Parse.framework"; sourceTree = "<group>"; };
 		D99EF1B91A173B7E00B19067 /* Frooder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Frooder-Bridging-Header.h"; sourceTree = "<group>"; };
-		D99EF1BC1A173EF400B19067 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../Downloads/parse-library-1.5.0/Bolts.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,10 @@
 				D99EF1A81A173B2000B19067 /* CoreGraphics.framework in Frameworks */,
 				D99EF1A61A173B1800B19067 /* CFNetwork.framework in Frameworks */,
 				D99EF1A41A173B1300B19067 /* AudioToolbox.framework in Frameworks */,
-				D99EF1B81A173B6200B19067 /* Parse.framework in Frameworks */,
-				D99EF1BD1A173EF400B19067 /* Bolts.framework in Frameworks */,
+				2E94E6F81A17D1BB00DC3629 /* Bolts.framework in Frameworks */,
+				2E94E6F91A17D1BB00DC3629 /* Parse.framework in Frameworks */,
+				2E94E6FC1A17D1C200DC3629 /* ParseFacebookUtils.framework in Frameworks */,
+				2E94E6FD1A17D1C200DC3629 /* ParseUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +102,10 @@
 		D99EF1751A173AF900B19067 = {
 			isa = PBXGroup;
 			children = (
-				D99EF1BC1A173EF400B19067 /* Bolts.framework */,
-				D99EF1B71A173B6200B19067 /* Parse.framework */,
+				2E94E6FA1A17D1C200DC3629 /* ParseFacebookUtils.framework */,
+				2E94E6FB1A17D1C200DC3629 /* ParseUI.framework */,
+				2E94E6F61A17D1BB00DC3629 /* Bolts.framework */,
+				2E94E6F71A17D1BB00DC3629 /* Parse.framework */,
 				D99EF1B51A173B5900B19067 /* SystemConfiguration.framework */,
 				D99EF1B31A173B5200B19067 /* StoreKit.framework */,
 				D99EF1B11A173B4B00B19067 /* Security.framework */,
@@ -211,6 +219,7 @@
 				TargetAttributes = {
 					D99EF17D1A173AF900B19067 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 2S3D8J8M3T;
 					};
 					D99EF1921A173AF900B19067 = {
 						CreatedOnToolsVersion = 6.1;
@@ -389,13 +398,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iOS Development: Samy Zarour (2Z8LLY4JCQ)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Swati/Downloads/parse-library-1.5.0",
+					"/Users/Samy/Downloads/parse-library-1.5.0",
+					"(1)",
 				);
 				INFOPLIST_FILE = Frooder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = all;
 				SWIFT_OBJC_BRIDGING_HEADER = "Frooder-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -406,13 +422,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iOS Development: Samy Zarour (2Z8LLY4JCQ)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Swati/Downloads/parse-library-1.5.0",
+					"/Users/Samy/Downloads/parse-library-1.5.0",
+					"(1)",
 				);
 				INFOPLIST_FILE = Frooder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = all;
 				SWIFT_OBJC_BRIDGING_HEADER = "Frooder-Bridging-Header.h";
 			};
 			name = Release;
@@ -470,6 +493,7 @@
 				D99EF19F1A173AF900B19067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D99EF1A01A173AF900B19067 /* Build configuration list for PBXNativeTarget "FrooderTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +502,7 @@
 				D99EF1A21A173AF900B19067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
