@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D99EF1841A173AF900B19067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EF1831A173AF900B19067 /* AppDelegate.swift */; };
+		D99EF1861A173AF900B19067 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EF1851A173AF900B19067 /* ViewController.swift */; };
+		D99EF1891A173AF900B19067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99EF1871A173AF900B19067 /* Main.storyboard */; };
+		D99EF18B1A173AF900B19067 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99EF18A1A173AF900B19067 /* Images.xcassets */; };
+		D99EF18E1A173AF900B19067 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99EF18C1A173AF900B19067 /* LaunchScreen.xib */; };
+		D99EF19A1A173AF900B19067 /* FrooderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EF1991A173AF900B19067 /* FrooderTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D99EF1941A173AF900B19067 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D99EF1761A173AF900B19067 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D99EF17D1A173AF900B19067;
+			remoteInfo = Frooder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D99EF17E1A173AF900B19067 /* Frooder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frooder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99EF1821A173AF900B19067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99EF1831A173AF900B19067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D99EF1851A173AF900B19067 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D99EF1881A173AF900B19067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D99EF18A1A173AF900B19067 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D99EF18D1A173AF900B19067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D99EF1931A173AF900B19067 /* FrooderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrooderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99EF1981A173AF900B19067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99EF1991A173AF900B19067 /* FrooderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrooderTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D99EF17B1A173AF900B19067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99EF1901A173AF900B19067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D99EF1751A173AF900B19067 = {
+			isa = PBXGroup;
+			children = (
+				D99EF1801A173AF900B19067 /* Frooder */,
+				D99EF1961A173AF900B19067 /* FrooderTests */,
+				D99EF17F1A173AF900B19067 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D99EF17F1A173AF900B19067 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D99EF17E1A173AF900B19067 /* Frooder.app */,
+				D99EF1931A173AF900B19067 /* FrooderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D99EF1801A173AF900B19067 /* Frooder */ = {
+			isa = PBXGroup;
+			children = (
+				D99EF1831A173AF900B19067 /* AppDelegate.swift */,
+				D99EF1851A173AF900B19067 /* ViewController.swift */,
+				D99EF1871A173AF900B19067 /* Main.storyboard */,
+				D99EF18A1A173AF900B19067 /* Images.xcassets */,
+				D99EF18C1A173AF900B19067 /* LaunchScreen.xib */,
+				D99EF1811A173AF900B19067 /* Supporting Files */,
+			);
+			path = Frooder;
+			sourceTree = "<group>";
+		};
+		D99EF1811A173AF900B19067 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D99EF1821A173AF900B19067 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D99EF1961A173AF900B19067 /* FrooderTests */ = {
+			isa = PBXGroup;
+			children = (
+				D99EF1991A173AF900B19067 /* FrooderTests.swift */,
+				D99EF1971A173AF900B19067 /* Supporting Files */,
+			);
+			path = FrooderTests;
+			sourceTree = "<group>";
+		};
+		D99EF1971A173AF900B19067 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D99EF1981A173AF900B19067 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D99EF17D1A173AF900B19067 /* Frooder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D99EF19D1A173AF900B19067 /* Build configuration list for PBXNativeTarget "Frooder" */;
+			buildPhases = (
+				D99EF17A1A173AF900B19067 /* Sources */,
+				D99EF17B1A173AF900B19067 /* Frameworks */,
+				D99EF17C1A173AF900B19067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Frooder;
+			productName = Frooder;
+			productReference = D99EF17E1A173AF900B19067 /* Frooder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D99EF1921A173AF900B19067 /* FrooderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D99EF1A01A173AF900B19067 /* Build configuration list for PBXNativeTarget "FrooderTests" */;
+			buildPhases = (
+				D99EF18F1A173AF900B19067 /* Sources */,
+				D99EF1901A173AF900B19067 /* Frameworks */,
+				D99EF1911A173AF900B19067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D99EF1951A173AF900B19067 /* PBXTargetDependency */,
+			);
+			name = FrooderTests;
+			productName = FrooderTests;
+			productReference = D99EF1931A173AF900B19067 /* FrooderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D99EF1761A173AF900B19067 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Neeraj Bajpayee";
+				TargetAttributes = {
+					D99EF17D1A173AF900B19067 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					D99EF1921A173AF900B19067 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = D99EF17D1A173AF900B19067;
+					};
+				};
+			};
+			buildConfigurationList = D99EF1791A173AF900B19067 /* Build configuration list for PBXProject "Frooder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D99EF1751A173AF900B19067;
+			productRefGroup = D99EF17F1A173AF900B19067 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D99EF17D1A173AF900B19067 /* Frooder */,
+				D99EF1921A173AF900B19067 /* FrooderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D99EF17C1A173AF900B19067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99EF1891A173AF900B19067 /* Main.storyboard in Resources */,
+				D99EF18E1A173AF900B19067 /* LaunchScreen.xib in Resources */,
+				D99EF18B1A173AF900B19067 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99EF1911A173AF900B19067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D99EF17A1A173AF900B19067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99EF1861A173AF900B19067 /* ViewController.swift in Sources */,
+				D99EF1841A173AF900B19067 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99EF18F1A173AF900B19067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99EF19A1A173AF900B19067 /* FrooderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D99EF1951A173AF900B19067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D99EF17D1A173AF900B19067 /* Frooder */;
+			targetProxy = D99EF1941A173AF900B19067 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D99EF1871A173AF900B19067 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D99EF1881A173AF900B19067 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D99EF18C1A173AF900B19067 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D99EF18D1A173AF900B19067 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D99EF19B1A173AF900B19067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D99EF19C1A173AF900B19067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D99EF19E1A173AF900B19067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Frooder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D99EF19F1A173AF900B19067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Frooder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D99EF1A11A173AF900B19067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FrooderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frooder.app/Frooder";
+			};
+			name = Debug;
+		};
+		D99EF1A21A173AF900B19067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FrooderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frooder.app/Frooder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D99EF1791A173AF900B19067 /* Build configuration list for PBXProject "Frooder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99EF19B1A173AF900B19067 /* Debug */,
+				D99EF19C1A173AF900B19067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D99EF19D1A173AF900B19067 /* Build configuration list for PBXNativeTarget "Frooder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99EF19E1A173AF900B19067 /* Debug */,
+				D99EF19F1A173AF900B19067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D99EF1A01A173AF900B19067 /* Build configuration list for PBXNativeTarget "FrooderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99EF1A11A173AF900B19067 /* Debug */,
+				D99EF1A21A173AF900B19067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D99EF1761A173AF900B19067 /* Project object */;
+}
