@@ -13,6 +13,18 @@
 		D99EF18B1A173AF900B19067 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99EF18A1A173AF900B19067 /* Images.xcassets */; };
 		D99EF18E1A173AF900B19067 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99EF18C1A173AF900B19067 /* LaunchScreen.xib */; };
 		D99EF19A1A173AF900B19067 /* FrooderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EF1991A173AF900B19067 /* FrooderTests.swift */; };
+		D99EF1A41A173B1300B19067 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1A31A173B1300B19067 /* AudioToolbox.framework */; };
+		D99EF1A61A173B1800B19067 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1A51A173B1800B19067 /* CFNetwork.framework */; };
+		D99EF1A81A173B2000B19067 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1A71A173B2000B19067 /* CoreGraphics.framework */; };
+		D99EF1AA1A173B2600B19067 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1A91A173B2600B19067 /* CoreLocation.framework */; };
+		D99EF1AC1A173B3A00B19067 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1AB1A173B3A00B19067 /* libz.dylib */; };
+		D99EF1AE1A173B4000B19067 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1AD1A173B4000B19067 /* MobileCoreServices.framework */; };
+		D99EF1B01A173B4500B19067 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1AF1A173B4500B19067 /* QuartzCore.framework */; };
+		D99EF1B21A173B4B00B19067 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1B11A173B4B00B19067 /* Security.framework */; };
+		D99EF1B41A173B5200B19067 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1B31A173B5200B19067 /* StoreKit.framework */; };
+		D99EF1B61A173B5900B19067 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1B51A173B5900B19067 /* SystemConfiguration.framework */; };
+		D99EF1B81A173B6200B19067 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1B71A173B6200B19067 /* Parse.framework */; };
+		D99EF1BD1A173EF400B19067 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1BC1A173EF400B19067 /* Bolts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,19 @@
 		D99EF1931A173AF900B19067 /* FrooderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrooderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99EF1981A173AF900B19067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D99EF1991A173AF900B19067 /* FrooderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrooderTests.swift; sourceTree = "<group>"; };
+		D99EF1A31A173B1300B19067 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D99EF1A51A173B1800B19067 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D99EF1A71A173B2000B19067 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D99EF1A91A173B2600B19067 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D99EF1AB1A173B3A00B19067 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D99EF1AD1A173B4000B19067 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D99EF1AF1A173B4500B19067 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D99EF1B11A173B4B00B19067 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D99EF1B31A173B5200B19067 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D99EF1B51A173B5900B19067 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D99EF1B71A173B6200B19067 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../Downloads/parse-library-1.5.0/Parse.framework"; sourceTree = "<group>"; };
+		D99EF1B91A173B7E00B19067 /* Frooder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Frooder-Bridging-Header.h"; sourceTree = "<group>"; };
+		D99EF1BC1A173EF400B19067 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../Downloads/parse-library-1.5.0/Bolts.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +68,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99EF1B61A173B5900B19067 /* SystemConfiguration.framework in Frameworks */,
+				D99EF1B41A173B5200B19067 /* StoreKit.framework in Frameworks */,
+				D99EF1B21A173B4B00B19067 /* Security.framework in Frameworks */,
+				D99EF1B01A173B4500B19067 /* QuartzCore.framework in Frameworks */,
+				D99EF1AE1A173B4000B19067 /* MobileCoreServices.framework in Frameworks */,
+				D99EF1AC1A173B3A00B19067 /* libz.dylib in Frameworks */,
+				D99EF1AA1A173B2600B19067 /* CoreLocation.framework in Frameworks */,
+				D99EF1A81A173B2000B19067 /* CoreGraphics.framework in Frameworks */,
+				D99EF1A61A173B1800B19067 /* CFNetwork.framework in Frameworks */,
+				D99EF1A41A173B1300B19067 /* AudioToolbox.framework in Frameworks */,
+				D99EF1B81A173B6200B19067 /* Parse.framework in Frameworks */,
+				D99EF1BD1A173EF400B19067 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +96,22 @@
 		D99EF1751A173AF900B19067 = {
 			isa = PBXGroup;
 			children = (
+				D99EF1BC1A173EF400B19067 /* Bolts.framework */,
+				D99EF1B71A173B6200B19067 /* Parse.framework */,
+				D99EF1B51A173B5900B19067 /* SystemConfiguration.framework */,
+				D99EF1B31A173B5200B19067 /* StoreKit.framework */,
+				D99EF1B11A173B4B00B19067 /* Security.framework */,
+				D99EF1AF1A173B4500B19067 /* QuartzCore.framework */,
+				D99EF1AD1A173B4000B19067 /* MobileCoreServices.framework */,
+				D99EF1AB1A173B3A00B19067 /* libz.dylib */,
+				D99EF1A91A173B2600B19067 /* CoreLocation.framework */,
+				D99EF1A71A173B2000B19067 /* CoreGraphics.framework */,
+				D99EF1A51A173B1800B19067 /* CFNetwork.framework */,
+				D99EF1A31A173B1300B19067 /* AudioToolbox.framework */,
 				D99EF1801A173AF900B19067 /* Frooder */,
 				D99EF1961A173AF900B19067 /* FrooderTests */,
 				D99EF17F1A173AF900B19067 /* Products */,
+				D99EF1B91A173B7E00B19067 /* Frooder-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -338,9 +388,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Swati/Downloads/parse-library-1.5.0",
+				);
 				INFOPLIST_FILE = Frooder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Frooder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -348,9 +405,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Swati/Downloads/parse-library-1.5.0",
+				);
 				INFOPLIST_FILE = Frooder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Frooder-Bridging-Header.h";
 			};
 			name = Release;
 		};
