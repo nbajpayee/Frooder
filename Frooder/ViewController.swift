@@ -73,11 +73,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     {
         Parse.setApplicationId(appId, clientKey: clientKey)
         
-        if (foodItem.hasText() && )
+        if (foodItem.hasText())
         {
             var object = PFObject(className: "FoodItem")
             object.addObject(foodItem.text, forKey: "typeOfFood")
-            object.addObject(stillAvailable.text, forKey: "isStillAvailable")
+            //object.addObject(stillAvailable.text, forKey: "isStillAvailable")
             object.addObject(getCurrentDateAndTime(), forKey: "DateTime")
         PFGeoPoint.geoPointForCurrentLocationInBackground {
             (geoPoint: PFGeoPoint!, error: NSError!) -> Void in

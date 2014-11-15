@@ -16,15 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let clientKey = "H6gL0iFmKk7jCDT9danWB8zuMm5BpoPvkOvSNwkh"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        Parse.setApplicationId(appId, clientKey: clientKey)
-        // Override point for customization after application launch.
-        return true
-    }
-    
-    
-    //Push notification code
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         UINavigationBar.appearance().barTintColor = UIColor.orangeColor()
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
