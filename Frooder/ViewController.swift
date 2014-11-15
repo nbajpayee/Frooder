@@ -11,10 +11,12 @@ import UIKit
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var testTextField: UITextField!
-    
     @IBOutlet weak var testReadButton: UIButton!
-    
     @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var userNametxt: UITextField!
+    @IBOutlet weak var userPasstxt: UITextField!
+    @IBOutlet weak var foodItem: UITextField!
+    @IBOutlet weak var howMuchAvailable: UIPickerView!
     
     
     let appId = "peOCyFSug2utyLbNmeoCmqXXL38hp2B1epY0UBOV"
@@ -47,13 +49,36 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func getCurrentDateAndTime() -> (String) {
+        
+        let date = NSDate() //Get current date
+        
+        //Formatter for time
+        let formatterTime = NSDateFormatter()
+        formatterTime.timeStyle = .ShortStyle //Set style of time
+        var timeString = formatterTime.stringFromDate(date) //Convert to String
+        
+        
+        //Formatter for date
+        let formatterDate = NSDateFormatter()
+        formatterDate.dateStyle = .ShortStyle //Set style of date
+        var dateString = formatterDate.stringFromDate(date) //Convert to String
+        
+        return (dateString + " " + timeString) //Returns a Tuple type
+    }
+    
 
     @IBAction func testSave()
     {
         Parse.setApplicationId(appId, clientKey: clientKey)
-        var object = PFObject(className: "FoodItem")
-        object.addObject("Banana", forKey: "typeOfFood")
-        object.addObject(true, forKey: "isStillAvailable")
+        
+        if (foodItem.hasText() && )
+        {
+            var object = PFObject(className: "FoodItem")
+            object.addObject(foodItem.text, forKey: "typeOfFood")
+            object.addObject(stillAvailable.text, forKey: "isStillAvailable")
+            object.addObject(getCurrentDateAndTime(), forKey: "DateTime")
         PFGeoPoint.geoPointForCurrentLocationInBackground {
             (geoPoint: PFGeoPoint!, error: NSError!) -> Void in
             if error == nil {
@@ -69,6 +94,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
             }
         }
+            
         //object.addObject("truck", forKey: "location")
 
         
@@ -76,6 +102,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let alertController = UIAlertController(title: "Thanks for feeding us!", message: "We love you!", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alertController, animated: true, completion: nil)
+        }
     }
     
     
@@ -102,6 +129,64 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             }
         }
     }
+    
+    
+    
+    // create User profiles
+    func createUser(username:String, password:String) {
+        var user = PFUser()
+        user.username = username
+        user.password = password
+        
+        
+        user.signUpInBackgroundWithBlock {
+            (succeeded: Bool!, error: NSError!) -> Void in
+            if error == nil {
+                // Hooray! Let them use the app now.
+                NSLog("Created User")
+               
+            } else {
+                
+                let errorString = error.userInfo!["error"] as NSString
+                // Show the errorString somewhere and let the user try again.
+                
+            }
+        }
+    }
+    
+    
+    @IBAction func signUp(sender: UIButton) {
+        NSLog("hasText", userNametxt.hasText())
+        if (userNametxt.hasText() && userPasstxt.hasText()) {
+            createUser(userNametxt.text, password: userPasstxt.text)
+            userNametxt.text = ""
+            userPasstxt.text = ""
+        }
+    }
+    
+    @IBAction func userLogin(sender: UIButton) {
+        if (userNametxt.hasText() && userPasstxt.hasText()) {
+            PFUser.logInWithUsernameInBackground(userNametxt.text, password: userPasstxt.text) {
+            (user: PFUser!, error: NSError!) -> Void in
+                if user != nil {
+                    // Do stuff after successful login.
+                    NSLog("Logged in")
+                    let alertController = UIAlertController(title: "You've logged in!", message: "Enjoy the app!", preferredStyle: UIAlertControllerStyle.Alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                } else {
+                    // The login failed. Check error to see why.
+                    NSLog("Login failed")
+                    let alertController = UIAlertController(title: "Login failed!", message: "Try again!", preferredStyle: UIAlertControllerStyle.Alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                }
+            }
+            userPasstxt.text = ""
+            userNametxt.text = ""
+        }
+    }
+    
     
     @IBAction func getLocation(sender: UIButton) {
 //        
