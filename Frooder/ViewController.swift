@@ -16,6 +16,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var locationTextField: UITextField!
     
+    
+    let appId = "peOCyFSug2utyLbNmeoCmqXXL38hp2B1epY0UBOV"
+    let clientKey = "H6gL0iFmKk7jCDT9danWB8zuMm5BpoPvkOvSNwkh"
+    
     var manager:CLLocationManager!
     
     override func viewDidLoad() {
@@ -46,7 +50,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBAction func testSave()
     {
-        Parse.setApplicationId("peOCyFSug2utyLbNmeoCmqXXL38hp2B1epY0UBOV", clientKey: "H6gL0iFmKk7jCDT9danWB8zuMm5BpoPvkOvSNwkh")
+        Parse.setApplicationId(appId, clientKey: clientKey)
         var object = PFObject(className: "FoodItem")
         object.addObject("Banana", forKey: "typeOfFood")
         object.addObject(true, forKey: "isStillAvailable")
