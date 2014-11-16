@@ -28,9 +28,13 @@
 		D99EF1B21A173B4B00B19067 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1B11A173B4B00B19067 /* Security.framework */; };
 		D99EF1B61A173B5900B19067 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1B51A173B5900B19067 /* SystemConfiguration.framework */; };
 		D9C820F31A189A5D00B7512B /* availableFoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C820F21A189A5D00B7512B /* availableFoodsViewController.swift */; };
+		D9C820F51A18A41600B7512B /* FrooderIconText.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C820F41A18A41600B7512B /* FrooderIconText.png */; };
+		D9C820F71A18B41500B7512B /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C820F61A18B41500B7512B /* mapViewController.swift */; };
+		D9C820FB1A18C16E00B7512B /* black406.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C820F81A18C16E00B7512B /* black406.png */; };
+		D9C820FC1A18C16E00B7512B /* fastfood.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C820F91A18C16E00B7512B /* fastfood.png */; };
+		D9C820FD1A18C16E00B7512B /* searching22.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C820FA1A18C16E00B7512B /* searching22.png */; };
 		D9DCCCB41A180B32009DD745 /* addFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCCCB31A180B32009DD745 /* addFoodViewController.swift */; };
 		D9DCCCBA1A180C05009DD745 /* availableFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCCCB91A180C05009DD745 /* availableFoodViewController.swift */; };
-		D9DCCCBC1A180C4B009DD745 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCCCBB1A180C4B009DD745 /* settingsViewController.swift */; };
 		D9DCCCBE1A1815F6009DD745 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCCCBD1A1815F6009DD745 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,9 +75,13 @@
 		D99EF1B51A173B5900B19067 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D99EF1B91A173B7E00B19067 /* Frooder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Frooder-Bridging-Header.h"; sourceTree = "<group>"; };
 		D9C820F21A189A5D00B7512B /* availableFoodsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = availableFoodsViewController.swift; sourceTree = "<group>"; };
+		D9C820F41A18A41600B7512B /* FrooderIconText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FrooderIconText.png; path = ../../../Desktop/FrooderIconText.png; sourceTree = "<group>"; };
+		D9C820F61A18B41500B7512B /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		D9C820F81A18C16E00B7512B /* black406.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = black406.png; path = ../../../Downloads/flaticondownload/black406.png; sourceTree = "<group>"; };
+		D9C820F91A18C16E00B7512B /* fastfood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fastfood.png; path = ../../../Downloads/flaticondownload/fastfood.png; sourceTree = "<group>"; };
+		D9C820FA1A18C16E00B7512B /* searching22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = searching22.png; path = ../../../Downloads/flaticondownload/searching22.png; sourceTree = "<group>"; };
 		D9DCCCB31A180B32009DD745 /* addFoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addFoodViewController.swift; sourceTree = "<group>"; };
 		D9DCCCB91A180C05009DD745 /* availableFoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = availableFoodViewController.swift; sourceTree = "<group>"; };
-		D9DCCCBB1A180C4B009DD745 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		D9DCCCBD1A1815F6009DD745 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,8 +157,8 @@
 				D99EF1851A173AF900B19067 /* ViewController.swift */,
 				D9DCCCB91A180C05009DD745 /* availableFoodViewController.swift */,
 				D9DCCCB31A180B32009DD745 /* addFoodViewController.swift */,
-				D9DCCCBB1A180C4B009DD745 /* settingsViewController.swift */,
 				2E3D08A71A1850B900944BF4 /* Main.storyboard */,
+				D9C820F61A18B41500B7512B /* mapViewController.swift */,
 				D9C820F21A189A5D00B7512B /* availableFoodsViewController.swift */,
 				D9DCCCBD1A1815F6009DD745 /* TabBarController.swift */,
 				D99EF18A1A173AF900B19067 /* Images.xcassets */,
@@ -163,6 +171,10 @@
 		D99EF1811A173AF900B19067 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9C820F81A18C16E00B7512B /* black406.png */,
+				D9C820F91A18C16E00B7512B /* fastfood.png */,
+				D9C820FA1A18C16E00B7512B /* searching22.png */,
+				D9C820F41A18A41600B7512B /* FrooderIconText.png */,
 				D99EF1821A173AF900B19067 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -275,8 +287,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D99EF18E1A173AF900B19067 /* LaunchScreen.xib in Resources */,
+				D9C820F51A18A41600B7512B /* FrooderIconText.png in Resources */,
 				2E3D08A91A1850B900944BF4 /* Main.storyboard in Resources */,
+				D9C820FB1A18C16E00B7512B /* black406.png in Resources */,
+				D9C820FD1A18C16E00B7512B /* searching22.png in Resources */,
 				D99EF18B1A173AF900B19067 /* Images.xcassets in Resources */,
+				D9C820FC1A18C16E00B7512B /* fastfood.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,13 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9DCCCBC1A180C4B009DD745 /* settingsViewController.swift in Sources */,
 				D9DCCCBA1A180C05009DD745 /* availableFoodViewController.swift in Sources */,
 				D9DCCCB41A180B32009DD745 /* addFoodViewController.swift in Sources */,
 				D9C820F31A189A5D00B7512B /* availableFoodsViewController.swift in Sources */,
 				D9DCCCBE1A1815F6009DD745 /* TabBarController.swift in Sources */,
 				D99EF1861A173AF900B19067 /* ViewController.swift in Sources */,
 				D99EF1841A173AF900B19067 /* AppDelegate.swift in Sources */,
+				D9C820F71A18B41500B7512B /* mapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

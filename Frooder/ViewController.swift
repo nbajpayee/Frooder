@@ -54,7 +54,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
             var currentUser = PFUser.currentUser()
             if (currentUser != nil) {
                 NSLog("got location, attempting save")
+                var currentInstallation = PFInstallation.currentInstallation()
+                currentInstallation.addUniqueObject("Princeton", forKey: "channels")
+                currentInstallation["location"] = PFGeoPoint(location: locations[0] as CLLocation)
                 currentUser["location"] = PFGeoPoint(location: locations[0] as CLLocation)
+                currentInstallation.saveInBackgroundWithTarget(nil, selector: nil)
                 currentUser.saveInBackgroundWithTarget(nil, selector: nil)
             } else {
                 NSLog("USER???")
@@ -209,7 +213,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
                     PFGeoPoint.geoPointForCurrentLocationInBackground{
                         (geoPoint:PFGeoPoint!, error: NSError!) -> Void in
                         if error == nil {
+                            var currentInstallation = PFInstallation.currentInstallation()
+                            currentInstallation.addUniqueObject("Princeton", forKey: "channels")
+                            currentInstallation.setObject(geoPoint, forKey: "location")
                             user.setObject(geoPoint, forKey: "location")
+                            currentInstallation.saveInBackgroundWithTarget(nil, selector: nil)
                             user.saveInBackgroundWithTarget(nil, selector: nil)
                         }
                     }
