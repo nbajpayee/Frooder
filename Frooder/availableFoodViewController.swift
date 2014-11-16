@@ -65,9 +65,12 @@ class availableFoodViewController:UITableViewController, UITableViewDelegate, UI
     var userLocation : PFGeoPoint?
 
     
+    var masterfoodName: String!
+    var masterLocation: CLLocation!
+    
     var candies = [Candy]()
     var distances = [Distance]()
-    
+    var numItems: Int!
     var currentlySelectedRow : Int?
     
     override func viewDidLoad() {
@@ -83,7 +86,7 @@ class availableFoodViewController:UITableViewController, UITableViewDelegate, UI
                 query.limit = 20
                 self.placesObjects = query.findObjects() as [PFObject]
                 self.userLocation = geoPoint
-                
+                self.numItems = self.placesObjects.count
                 
                 var currentInstallation = PFInstallation.currentInstallation()
                 currentInstallation.addUniqueObject("Princeton", forKey: "channels")
@@ -100,8 +103,8 @@ class availableFoodViewController:UITableViewController, UITableViewDelegate, UI
         self.distances = [Distance (number: 1.0), Distance(number: 1.0), Distance(number: 1.0),Distance(number: 1.0)]
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var foodName: 
-        var location: CLLocation!
+        var foodName = masterfoodName
+        var location = masterLocation
     }
     
     override func didReceiveMemoryWarning() {
@@ -114,12 +117,14 @@ class availableFoodViewController:UITableViewController, UITableViewDelegate, UI
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.candies.count
+        return numItems!
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if currentlySelectedRow != nil {
             if currentlySelectedRow! == indexPath.row {
+                masterfoodName = (placesObjects[indexPath.row])["typeOfFood"] as String
+                masterLocation = (placesObjects[indexPath.row])["location"] as CLLocation
                 return 100
             }
         }
