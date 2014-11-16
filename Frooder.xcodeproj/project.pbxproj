@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E3D089E1A184F5F00944BF4 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3D089A1A184F5F00944BF4 /* ParseFacebookUtils.framework */; };
+		2E3D089F1A184F5F00944BF4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3D089B1A184F5F00944BF4 /* Bolts.framework */; };
+		2E3D08A01A184F5F00944BF4 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3D089C1A184F5F00944BF4 /* ParseUI.framework */; };
+		2E3D08A11A184F6000944BF4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3D089D1A184F5F00944BF4 /* Parse.framework */; };
+		2E3D08A91A1850B900944BF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E3D08A71A1850B900944BF4 /* Main.storyboard */; };
 		D900092A1A17F81E0026F7C6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90009291A17F81E0026F7C6 /* MapKit.framework */; };
 		D99EF1841A173AF900B19067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EF1831A173AF900B19067 /* AppDelegate.swift */; };
 		D99EF1861A173AF900B19067 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EF1851A173AF900B19067 /* ViewController.swift */; };
-		D99EF1891A173AF900B19067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99EF1871A173AF900B19067 /* Main.storyboard */; };
 		D99EF18B1A173AF900B19067 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99EF18A1A173AF900B19067 /* Images.xcassets */; };
 		D99EF18E1A173AF900B19067 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99EF18C1A173AF900B19067 /* LaunchScreen.xib */; };
 		D99EF19A1A173AF900B19067 /* FrooderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99EF1991A173AF900B19067 /* FrooderTests.swift */; };
@@ -23,10 +27,6 @@
 		D99EF1B01A173B4500B19067 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1AF1A173B4500B19067 /* QuartzCore.framework */; };
 		D99EF1B21A173B4B00B19067 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1B11A173B4B00B19067 /* Security.framework */; };
 		D99EF1B61A173B5900B19067 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EF1B51A173B5900B19067 /* SystemConfiguration.framework */; };
-		D9DCCCAF1A180A66009DD745 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCCCAB1A180A66009DD745 /* Bolts.framework */; };
-		D9DCCCB01A180A66009DD745 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCCCAC1A180A66009DD745 /* Parse.framework */; };
-		D9DCCCB11A180A66009DD745 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCCCAD1A180A66009DD745 /* ParseFacebookUtils.framework */; };
-		D9DCCCB21A180A66009DD745 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DCCCAE1A180A66009DD745 /* ParseUI.framework */; };
 		D9DCCCB41A180B32009DD745 /* addFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCCCB31A180B32009DD745 /* addFoodViewController.swift */; };
 		D9DCCCBA1A180C05009DD745 /* availableFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCCCB91A180C05009DD745 /* availableFoodViewController.swift */; };
 		D9DCCCBC1A180C4B009DD745 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DCCCBB1A180C4B009DD745 /* settingsViewController.swift */; };
@@ -44,12 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E3D089A1A184F5F00944BF4 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../../../Downloads/parse-library-1.5.0 (1)/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		2E3D089B1A184F5F00944BF4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../../Downloads/parse-library-1.5.0 (1)/Bolts.framework"; sourceTree = "<group>"; };
+		2E3D089C1A184F5F00944BF4 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../../../Downloads/parse-library-1.5.0 (1)/ParseUI.framework"; sourceTree = "<group>"; };
+		2E3D089D1A184F5F00944BF4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../../Downloads/parse-library-1.5.0 (1)/Parse.framework"; sourceTree = "<group>"; };
+		2E3D08A81A1850B900944BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D90009291A17F81E0026F7C6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D99EF17E1A173AF900B19067 /* Frooder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frooder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99EF1821A173AF900B19067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D99EF1831A173AF900B19067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99EF1851A173AF900B19067 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D99EF1881A173AF900B19067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D99EF18A1A173AF900B19067 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D99EF18D1A173AF900B19067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D99EF1931A173AF900B19067 /* FrooderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrooderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,10 +69,6 @@
 		D99EF1B11A173B4B00B19067 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D99EF1B51A173B5900B19067 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D99EF1B91A173B7E00B19067 /* Frooder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Frooder-Bridging-Header.h"; sourceTree = "<group>"; };
-		D9DCCCAB1A180A66009DD745 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1.5.0/Bolts.framework"; sourceTree = "<group>"; };
-		D9DCCCAC1A180A66009DD745 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.5.0/Parse.framework"; sourceTree = "<group>"; };
-		D9DCCCAD1A180A66009DD745 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../Downloads/parse-library-1.5.0/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
-		D9DCCCAE1A180A66009DD745 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../Downloads/parse-library-1.5.0/ParseUI.framework"; sourceTree = "<group>"; };
 		D9DCCCB31A180B32009DD745 /* addFoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addFoodViewController.swift; sourceTree = "<group>"; };
 		D9DCCCB91A180C05009DD745 /* availableFoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = availableFoodViewController.swift; sourceTree = "<group>"; };
 		D9DCCCBB1A180C4B009DD745 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
@@ -89,11 +89,11 @@
 				D99EF1AA1A173B2600B19067 /* CoreLocation.framework in Frameworks */,
 				D99EF1A81A173B2000B19067 /* CoreGraphics.framework in Frameworks */,
 				D99EF1A61A173B1800B19067 /* CFNetwork.framework in Frameworks */,
+				2E3D089E1A184F5F00944BF4 /* ParseFacebookUtils.framework in Frameworks */,
+				2E3D089F1A184F5F00944BF4 /* Bolts.framework in Frameworks */,
+				2E3D08A01A184F5F00944BF4 /* ParseUI.framework in Frameworks */,
+				2E3D08A11A184F6000944BF4 /* Parse.framework in Frameworks */,
 				D99EF1A41A173B1300B19067 /* AudioToolbox.framework in Frameworks */,
-				D9DCCCAF1A180A66009DD745 /* Bolts.framework in Frameworks */,
-				D9DCCCB01A180A66009DD745 /* Parse.framework in Frameworks */,
-				D9DCCCB11A180A66009DD745 /* ParseFacebookUtils.framework in Frameworks */,
-				D9DCCCB21A180A66009DD745 /* ParseUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,10 +110,10 @@
 		D99EF1751A173AF900B19067 = {
 			isa = PBXGroup;
 			children = (
-				D9DCCCAB1A180A66009DD745 /* Bolts.framework */,
-				D9DCCCAC1A180A66009DD745 /* Parse.framework */,
-				D9DCCCAD1A180A66009DD745 /* ParseFacebookUtils.framework */,
-				D9DCCCAE1A180A66009DD745 /* ParseUI.framework */,
+				2E3D089A1A184F5F00944BF4 /* ParseFacebookUtils.framework */,
+				2E3D089B1A184F5F00944BF4 /* Bolts.framework */,
+				2E3D089C1A184F5F00944BF4 /* ParseUI.framework */,
+				2E3D089D1A184F5F00944BF4 /* Parse.framework */,
 				D90009291A17F81E0026F7C6 /* MapKit.framework */,
 				D99EF1B51A173B5900B19067 /* SystemConfiguration.framework */,
 				D99EF1B11A173B4B00B19067 /* Security.framework */,
@@ -148,8 +148,8 @@
 				D9DCCCB91A180C05009DD745 /* availableFoodViewController.swift */,
 				D9DCCCB31A180B32009DD745 /* addFoodViewController.swift */,
 				D9DCCCBB1A180C4B009DD745 /* settingsViewController.swift */,
+				2E3D08A71A1850B900944BF4 /* Main.storyboard */,
 				D9DCCCBD1A1815F6009DD745 /* TabBarController.swift */,
-				D99EF1871A173AF900B19067 /* Main.storyboard */,
 				D99EF18A1A173AF900B19067 /* Images.xcassets */,
 				D99EF18C1A173AF900B19067 /* LaunchScreen.xib */,
 				D99EF1811A173AF900B19067 /* Supporting Files */,
@@ -271,8 +271,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D99EF1891A173AF900B19067 /* Main.storyboard in Resources */,
 				D99EF18E1A173AF900B19067 /* LaunchScreen.xib in Resources */,
+				2E3D08A91A1850B900944BF4 /* Main.storyboard in Resources */,
 				D99EF18B1A173AF900B19067 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,10 +319,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D99EF1871A173AF900B19067 /* Main.storyboard */ = {
+		2E3D08A71A1850B900944BF4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D99EF1881A173AF900B19067 /* Base */,
+				2E3D08A81A1850B900944BF4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -431,6 +431,8 @@
 					"/Users/Swati/Downloads/parse-library-1.5.0",
 					"/Users/Samy/Downloads/parse-library-1.5.0",
 					"(1)",
+					"/Users/Samy/Downloads/parse-library-1.5.0",
+					"(1)",
 				);
 				INFOPLIST_FILE = Frooder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -454,6 +456,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Swati/Downloads/parse-library-1.5.0",
+					"/Users/Samy/Downloads/parse-library-1.5.0",
+					"(1)",
 					"/Users/Samy/Downloads/parse-library-1.5.0",
 					"(1)",
 				);
