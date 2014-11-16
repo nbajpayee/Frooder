@@ -16,9 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let clientKey = "H6gL0iFmKk7jCDT9danWB8zuMm5BpoPvkOvSNwkh"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        UINavigationBar.appearance().barTintColor = UIColor.orangeColor()
-        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-        
+        UINavigationBar.appearance().barTintColor = UIColor.redColor()
+        UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         
         Parse.setApplicationId(appId, clientKey: clientKey)
         
@@ -27,9 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
         //UIApplication.sharedApplication().registerForRemoteNotifications()
-        
         return true
     }
+
+    
     
     func application(application: UIApplication!, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings!) {
         UIApplication.sharedApplication().registerForRemoteNotifications()
@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //currentInstallation.setObject(PFUser.currentUser(), forKey: "owner")
         currentInstallation.saveInBackgroundWithTarget(nil, selector: nil)
     }
-    
+   
     func application(application: UIApplication!, didFailToRegisterForRemoteNotificationsWithError error: NSError!) {
         println(error.localizedDescription)
     }

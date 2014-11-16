@@ -21,18 +21,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
     @IBOutlet weak var continueView: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     
+   
+    
     let appId = "peOCyFSug2utyLbNmeoCmqXXL38hp2B1epY0UBOV"
     let clientKey = "H6gL0iFmKk7jCDT9danWB8zuMm5BpoPvkOvSNwkh"
-    
-    let userName = "hello"
-    let password = "password"
     
     var manager:CLLocationManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        userNametxt.text = "hi"
+        userPasstxt.text = "hello"
         //Setup our Location Manager
         manager = CLLocationManager()
         manager.requestAlwaysAuthorization()
@@ -40,7 +40,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
         {
             manager.delegate = self
             manager.desiredAccuracy = kCLLocationAccuracyBest
-            manager.startUpdatingLocation()
+            manager.startMonitoringSignificantLocationChanges()
         }
         
         continueView.hidden = true
@@ -49,9 +49,31 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         var locValue:CLLocationCoordinate2D = manager.location.coordinate
-        println("locations = \(locValue.latitude) \(locValue.longitude)")
+        if (locations != nil) {
+            //var locValue = CLLocationCoordinate2D(latitude: locations[0].latitude, longitude: locations[0].longitude)
+            var currentUser = PFUser.currentUser()
+            if (currentUser != nil) {
+                NSLog("got location, attempting save")
+                currentUser["location"] = PFGeoPoint(location: locations[0] as CLLocation)
+                currentUser.saveInBackgroundWithTarget(nil, selector: nil)
+            } else {
+                NSLog("USER???")
+            }
+//        var coder = CLGeocoder(locValue)
+//        CLGeocoder.reverseGeocodeLocation(locations[0], completionHandler: )
+            println("locations = \(locValue.latitude) \(locValue.longitude)")
+        }
     }
 
+//    func getPlacemarkFromLocation(location: CLLocation){
+//        CLGeocoder().reverseGeocodeLocation(location, completionHandler:
+//            {(placemarks, error) in
+//                if (error != nil) {println("reverse geodcode fail: \(error.localizedDescription)")}
+//                let pm = placemarks as [CLPlacemark]
+//                if pm.count > 0 { self.showAddPinViewController(placemarks[0] as CLPlacemark) }
+//        })
+//    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -184,6 +206,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDe
                     // Do stuff after successful login.
                     NSLog("Logged in")
                     
+                    PFGeoPoint.geoPointForCurrentLocationInBackground{
+                        (geoPoint:PFGeoPoint!, error: NSError!) -> Void in
+                        if error == nil {
+                            user.setObject(geoPoint, forKey: "location")
+                            user.saveInBackgroundWithTarget(nil, selector: nil)
+                        }
+                    }
                     
                     self.continueView.hidden = false
                     self.loginButton.hidden = true
