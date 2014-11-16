@@ -62,7 +62,7 @@ class availableFoodViewController:UITableViewController, UITableViewDelegate, UI
     }
     
     var placesObjects = [PFObject]()
-    var userLocation : PFGeoPoint
+    var userLocation : PFGeoPoint?
 
     
     var candies = [Candy]()
@@ -99,6 +99,10 @@ class availableFoodViewController:UITableViewController, UITableViewDelegate, UI
         self.candies = [Candy(name: "Pizza" ), Candy(name: "Burger"),Candy(name: "Cheese Steak"), Candy(name: "Pasta")]
         self.distances = [Distance (number: 1.0), Distance(number: 1.0), Distance(number: 1.0),Distance(number: 1.0)]
     }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var foodName: 
+        var location: CLLocation!
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -129,7 +133,7 @@ class availableFoodViewController:UITableViewController, UITableViewDelegate, UI
         var distance : Distance
         candy = Candy(name:(placesObjects[indexPath.row])["typeOfFood"] as String)
         var location = (placesObjects[indexPath.row])["location"] as PFGeoPoint
-        var floatNum = Float(userLocation.latitude - location.latitude + userLocation.longitude - location.latitude)
+        var floatNum = Float(userLocation!.latitude - location.latitude + userLocation!.longitude - location.latitude)
         distance = Distance(number: floatNum)
         distance.number = distance.number! * distance.number!
         cell.detailTextLabel!.text = nil
