@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let notificationSettings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: notificationTypes, categories: nil)
         
         UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
-        
+        //UIApplication.sharedApplication().registerForRemoteNotifications()
         
         return true
     }
@@ -38,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication!, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData!) {
         let currentInstallation:PFInstallation = PFInstallation.currentInstallation()
         currentInstallation.setDeviceTokenFromData(deviceToken)
+        //currentInstallation.setObject(PFUser.currentUser(), forKey: "owner")
         currentInstallation.saveInBackgroundWithTarget(nil, selector: nil)
     }
     

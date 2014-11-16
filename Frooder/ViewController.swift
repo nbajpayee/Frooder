@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var testTextField: UITextField!
     @IBOutlet weak var testReadButton: UIButton!
@@ -18,9 +18,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var foodItem: UITextField!
     @IBOutlet weak var howMuchAvailable: UIPickerView!
     
+    @IBOutlet weak var continueView: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     
     let appId = "peOCyFSug2utyLbNmeoCmqXXL38hp2B1epY0UBOV"
     let clientKey = "H6gL0iFmKk7jCDT9danWB8zuMm5BpoPvkOvSNwkh"
+    
+    let userName = "hello"
+    let password = "password"
     
     var manager:CLLocationManager!
     
@@ -38,6 +43,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             manager.startUpdatingLocation()
         }
         
+        continueView.hidden = true
+        
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
@@ -48,6 +55,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+        textField.resignFirstResponder()
+        return true;
     }
     
     func getCurrentDateAndTime() -> (String) {
@@ -171,9 +183,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 if user != nil {
                     // Do stuff after successful login.
                     NSLog("Logged in")
-                    let alertController = UIAlertController(title: "You've logged in!", message: "Enjoy the app!", preferredStyle: UIAlertControllerStyle.Alert)
-                    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-                    self.presentViewController(alertController, animated: true, completion: nil)
+                    
+                    
+                    self.continueView.hidden = false
+                    self.loginButton.hidden = true
+                    
+                    
                 } else {
                     // The login failed. Check error to see why.
                     NSLog("Login failed")
